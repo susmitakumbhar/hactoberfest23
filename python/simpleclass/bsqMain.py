@@ -59,15 +59,16 @@ def reset():
     entry2.delete(0, "end")
 
 
-# Create the reset button
-Button(button_frame1, text="Reset", bd=17, padx=41, pady=0, command=reset, font="arial 21 bold").pack(side=LEFT, padx=7)
-
 # Function to exit window
 def exit_window():
     root.destroy()
 
 # Create the exit window button
 Button(button_frame1, text="Exit Window", bd=17, padx=10, pady=0, command=exit_window, font="arial 21 bold").pack(side=LEFT)
+
+# Create the reset button
+Button(button_frame1, text="Reset", bd=17, padx=41, pady=0, command=reset, font="arial 21 bold").pack(side=LEFT, padx=7)
+
 
 
 
